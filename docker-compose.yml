@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  db:
+    image: "mcr.microsoft.com/mssql/server:2017-latest"
+    volumes:
+      - products-mssql-data:/var/opt/mssql
+      - products-mssql-user:/var/opt/sqlserver
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=MyUnbre4kable_Pwd
+  dockeresquel:
+    image: ${DOCKER_REGISTRY-}dockeresquel
+    ports:
+     - 5150:5005
+    build:
+      context: .
+      dockerfile: DockerEsqueL/Dockerfile
+    depends_on:
+      - db
+volumes:
+    products-mssql-data: {}
+    products-mssql-user: {}
