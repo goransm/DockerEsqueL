@@ -3,9 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockerEsqueL", "DockerEsqueL\DockerEsqueL.csproj", "{153D2A83-03C6-4A69-BFF9-B2EDD2C8EC7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DockerEsqueL", "DockerEsqueL\DockerEsqueL.csproj", "{153D2A83-03C6-4A69-BFF9-B2EDD2C8EC7E}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{27D50F5D-5A6F-4E10-B7CB-3EC07D9590E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9B31D362-150D-4C4D-87A5-B2BE4155E3A4}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
